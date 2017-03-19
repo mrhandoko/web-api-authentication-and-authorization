@@ -32,12 +32,13 @@ let userSchema = new Schema({
     required: [true, 'Email is required'],
     unique: true,
     validate: email_validation
-  }
+  },
   password: {
     type: String,
     required: [true, 'Password is required'],
     validate: password_validation
-  }
+  },
+  salt: String
 }, {
   timestamps: true
 })
