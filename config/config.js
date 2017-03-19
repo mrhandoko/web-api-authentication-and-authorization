@@ -4,7 +4,7 @@ const mongoose = require('mongoose')
 require('dotenv').config()
 
 // Build the connection string
-var dbURI = `mongodb://${process.env.HOST_NAME}/${process.env.DATABASE_NAME}`
+var dbURI = `mongodb://${process.env.HOSTNAME}/${process.env.DATABASE_NAME}`
 
 // Create the database connection
 mongoose.connect(dbURI)
